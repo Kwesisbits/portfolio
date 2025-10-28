@@ -1,0 +1,65 @@
+import { Card } from "@/components/ui/card";
+import { Award, Briefcase, GraduationCap } from "lucide-react";
+
+const About = () => {
+  return (
+    <section id="about" className="py-20 px-6">
+      <div className="container mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            About <span className="bg-gradient-primary bg-clip-text text-transparent">Me</span>
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            Passionate AI Engineer and Data Scientist dedicated to pushing the boundaries of artificial
+            intelligence. With expertise spanning from foundational machine learning to cutting-edge large
+            language models and agentic AI systems, I transform complex data challenges into innovative,
+            production-ready solutions.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-6">
+          <Card className="p-6 bg-gradient-card border-border/50 hover:border-primary/50 transition-all hover:shadow-card group">
+            <div className="flex flex-col items-center text-center space-y-4">
+              <div className="p-4 rounded-full bg-gradient-primary">
+                <Briefcase className="h-8 w-8 text-primary-foreground" />
+              </div>
+              <h3 className="text-xl font-semibold">Professional Experience</h3>
+              <p className="text-muted-foreground">
+                Extensive experience building and deploying AI systems at scale, from research prototypes to
+                production applications serving millions of users.
+              </p>
+            </div>
+          </Card>
+
+          <Card className="p-6 bg-gradient-card border-border/50 hover:border-primary/50 transition-all hover:shadow-card group">
+            <div className="flex flex-col items-center text-center space-y-4">
+              <div className="p-4 rounded-full bg-gradient-primary">
+                <GraduationCap className="h-8 w-8 text-primary-foreground" />
+              </div>
+              <h3 className="text-xl font-semibold">Education & Research</h3>
+              <p className="text-muted-foreground">
+                Strong academic foundation in machine learning, deep learning, and AI, combined with ongoing
+                research in emerging technologies like agentic AI and RAG systems.
+              </p>
+            </div>
+          </Card>
+
+          <Card className="p-6 bg-gradient-card border-border/50 hover:border-primary/50 transition-all hover:shadow-card group">
+            <div className="flex flex-col items-center text-center space-y-4">
+              <div className="p-4 rounded-full bg-gradient-primary">
+                <Award className="h-8 w-8 text-primary-foreground" />
+              </div>
+              <h3 className="text-xl font-semibold">Innovation & Impact</h3>
+              <p className="text-muted-foreground">
+                Committed to creating AI solutions that not only demonstrate technical excellence but also
+                deliver measurable business value and positive societal impact.
+              </p>
+            </div>
+          </Card>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default About;
