@@ -42,7 +42,9 @@ const Contact = () => {
                 <Mail className="h-6 w-6 text-primary-foreground" />
               </div>
               <h3 className="font-semibold">Email</h3>
-              <p className="text-sm text-muted-foreground">contact@aiengineer.dev</p>
+              <a href="mailto:nanaamponsah931@gmail.com" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                nanaamponsah931@gmail.com
+              </a>
             </div>
           </Card>
 
@@ -52,7 +54,7 @@ const Contact = () => {
                 <Phone className="h-6 w-6 text-primary-foreground" />
               </div>
               <h3 className="font-semibold">Phone</h3>
-              <p className="text-sm text-muted-foreground">+1 (555) 123-4567</p>
+              <p className="text-sm text-muted-foreground">+233 245 469 035 / +233 508 189 850</p>
             </div>
           </Card>
 
@@ -62,7 +64,8 @@ const Contact = () => {
                 <MapPin className="h-6 w-6 text-primary-foreground" />
               </div>
               <h3 className="font-semibold">Location</h3>
-              <p className="text-sm text-muted-foreground">San Francisco, CA</p>
+              <p className="text-sm text-muted-foreground">Accra, Ghana</p>
+              <p className="text-xs text-primary mt-1">Open to fully remote roles</p>
             </div>
           </Card>
         </div>
