@@ -34,8 +34,6 @@ const Skills = () => {
         { name: "PyTorch", level: 94 },
         { name: "TensorFlow", level: 91 },
         { name: "Keras", level: 89 },
-        { name: "JAX", level: 78 },
-        { name: "ONNX", level: 83 },
         { name: "Model Optimization", level: 87 },
       ],
     },
@@ -54,13 +52,12 @@ const Skills = () => {
   ];
 
   const additionalSkills = [
-    "Computer Vision (OpenCV, YOLO)",
-    "MLOps (MLflow, Weights & Biases)",
-    "Vector Databases (Pinecone, Weaviate)",
+    "CNN (Convolutional Neural Networks)",
     "API Development (FastAPI, Flask)",
-    "Cloud Platforms (AWS, GCP, Azure)",
-    "Docker & Kubernetes",
+    "Docker",
+    "AWS",
     "SQL & NoSQL Databases",
+    "Data Visualization",
     "Pandas, NumPy, Scikit-learn",
     "Model Deployment & Serving",
     "Distributed Training",

@@ -23,8 +23,10 @@ const Hero = () => {
             </span>
           </h1>
           <p className="text-xl text-muted-foreground">
-            Specializing in cutting-edge AI technologies, from LLMs and NLP to Agentic AI systems.
-            Building the future, one neural network at a time.
+            Building intelligent scalable{" "}
+            <span className="bg-gradient-primary bg-clip-text text-transparent">
+              AI and Data solutions
+            </span>
           </p>
           <div className="flex gap-4">
             <Button
@@ -44,19 +46,23 @@ const Hero = () => {
           </div>
           <div className="flex gap-4 pt-4">
             <a
-              href="#"
+              href="https://github.com/Kwesisbits"
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-3 rounded-full bg-card hover:bg-gradient-primary hover:text-primary-foreground transition-all hover:shadow-glow"
             >
               <Github className="h-5 w-5" />
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/nana-kwesi-amponsah/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-3 rounded-full bg-card hover:bg-gradient-primary hover:text-primary-foreground transition-all hover:shadow-glow"
             >
               <Linkedin className="h-5 w-5" />
             </a>
             <a
-              href="#"
+              href="mailto:nanaamponsah931@gmail.com"
               className="p-3 rounded-full bg-card hover:bg-gradient-primary hover:text-primary-foreground transition-all hover:shadow-glow"
             >
               <Mail className="h-5 w-5" />

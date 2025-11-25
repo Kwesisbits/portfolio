@@ -5,32 +5,30 @@ import { ExternalLink, Github } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "CNN for Account Security Image Classification",
+      title: "Multilingual Document RAG Processor",
       description:
-        "Advanced convolutional neural network designed to classify and authenticate user account images, detecting fraudulent profiles and ensuring platform security through deep learning-based image analysis.",
-      tech: ["PyTorch", "Computer Vision", "CNN", "Image Classification", "Security AI"],
+        "An AI-powered document Q&A and translation system supporting 12+ languages, enabling seamless multilingual information retrieval and cross-language document understanding.",
+      tech: ["RAG", "NLP", "HuggingFace", "Multilingual AI", "LangChain"],
       gradient: "from-cyan-500 to-blue-600",
+      demoLink: "https://huggingface.co/spaces/KwesiAI/rag-multilingual-processor",
+      githubLink: "https://github.com/Kwesisbits/RAG-Multilingual-Document-Processor",
     },
     {
-      title: "AI Virtual Assistant",
+      title: "AI Research Agent",
       description:
-        "Intelligent conversational agent powered by large language models, featuring multi-turn dialogue, context awareness, function calling capabilities, and seamless integration with external APIs for enhanced user interactions.",
-      tech: ["GPT-4", "LangChain", "NLP", "RAG", "Agentic AI"],
+        "A FastAPI web app that plans research workflows, runs tool-using agents (arXiv, Wikipedia, DuckDuckGo), and stores task state/results in Postgres. Includes Docker setup for seamless deployment.",
+      tech: ["Agentic AI", "FastAPI", "PostgreSQL", "Docker", "ML Deployment"],
       gradient: "from-purple-500 to-pink-600",
+      demoLink: "https://huggingface.co/spaces/KwesiAI/AI_Research_Agent",
+      githubLink: "https://github.com/Kwesisbits/AI-Research-Agent",
     },
     {
-      title: "Voice/Sound Transcription AI",
+      title: "Neural Collaborative Filtering Recommender",
       description:
-        "High-accuracy speech-to-text system utilizing state-of-the-art transformer models for real-time audio transcription, supporting multiple languages and acoustic environments with advanced noise reduction.",
-      tech: ["Whisper", "HuggingFace", "Audio Processing", "Transformers", "ASR"],
+        "Advanced recommendation system leveraging neural collaborative filtering techniques with PyTorch, combining user-item interactions with deep learning for personalized predictions.",
+      tech: ["PyTorch", "Recommendation Systems", "Deep Learning", "Neural Networks"],
       gradient: "from-green-500 to-teal-600",
-    },
-    {
-      title: "Restaurant Recommender System",
-      description:
-        "Sophisticated recommendation engine leveraging collaborative filtering, content-based analysis, and deep learning embeddings to provide personalized restaurant suggestions based on user preferences and behavior patterns.",
-      tech: ["TensorFlow", "Recommendation Systems", "NLP", "Data Science", "Embeddings"],
-      gradient: "from-orange-500 to-red-600",
+      githubLink: "https://github.com/Kwesisbits/Neural-Collaborative-Filtering-NCF-Recommender-System",
     },
   ];
 
@@ -46,7 +44,7 @@ const Projects = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, idx) => (
             <Card
               key={idx}
@@ -73,17 +71,25 @@ const Projects = () => {
                     variant="outline"
                     size="sm"
                     className="border-primary text-foreground hover:bg-primary/10 group/btn"
+                    asChild
                   >
-                    <Github className="h-4 w-4 mr-2 group-hover/btn:rotate-12 transition-transform" />
-                    Code
+                    <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                      <Github className="h-4 w-4 mr-2 group-hover/btn:rotate-12 transition-transform" />
+                      Code
+                    </a>
                   </Button>
-                  <Button
-                    size="sm"
-                    className="bg-gradient-primary text-primary-foreground hover:shadow-glow group/btn"
-                  >
-                    <ExternalLink className="h-4 w-4 mr-2 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
-                    Demo
-                  </Button>
+                  {project.demoLink && (
+                    <Button
+                      size="sm"
+                      className="bg-gradient-primary text-primary-foreground hover:shadow-glow group/btn"
+                      asChild
+                    >
+                      <a href={project.demoLink} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="h-4 w-4 mr-2 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
+                        Demo
+                      </a>
+                    </Button>
+                  )}
                 </div>
               </div>
             </Card>

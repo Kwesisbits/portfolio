@@ -46,6 +46,24 @@ const Navbar = () => {
             >
               Projects
             </button>
+            <button
+              onClick={() => scrollToSection("experience")}
+              className="text-foreground hover:text-primary transition-colors"
+            >
+              Experience
+            </button>
+            <button
+              onClick={() => scrollToSection("certifications")}
+              className="text-foreground hover:text-primary transition-colors"
+            >
+              Certifications
+            </button>
+            <button
+              onClick={() => scrollToSection("articles")}
+              className="text-foreground hover:text-primary transition-colors"
+            >
+              Articles
+            </button>
             <Button
               onClick={() => scrollToSection("contact")}
               className="bg-gradient-primary text-primary-foreground hover:shadow-glow transition-all"

@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -13,25 +13,23 @@ const Footer = () => {
           </div>
           <div className="flex gap-4">
             <a
-              href="#"
+              href="https://github.com/Kwesisbits"
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-3 rounded-full bg-card hover:bg-gradient-primary hover:text-primary-foreground transition-all hover:shadow-glow"
             >
               <Github className="h-5 w-5" />
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/nana-kwesi-amponsah/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-3 rounded-full bg-card hover:bg-gradient-primary hover:text-primary-foreground transition-all hover:shadow-glow"
             >
               <Linkedin className="h-5 w-5" />
             </a>
             <a
-              href="#"
-              className="p-3 rounded-full bg-card hover:bg-gradient-primary hover:text-primary-foreground transition-all hover:shadow-glow"
-            >
-              <Twitter className="h-5 w-5" />
-            </a>
-            <a
-              href="#"
+              href="mailto:nanaamponsah931@gmail.com"
               className="p-3 rounded-full bg-card hover:bg-gradient-primary hover:text-primary-foreground transition-all hover:shadow-glow"
             >
               <Mail className="h-5 w-5" />
