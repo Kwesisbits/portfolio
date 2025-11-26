@@ -10,10 +10,9 @@ const About = () => {
             About <span className="bg-gradient-primary bg-clip-text text-transparent">Me</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Passionate AI Engineer and Data Scientist dedicated to pushing the boundaries of artificial
-            intelligence. With expertise spanning from foundational machine learning to cutting-edge large
-            language models and agentic AI systems, I transform complex data challenges into innovative,
-            production-ready solutions.
+            Passionate AI Engineer and Data Scientist committed to continuous learning and excellence. 
+            Currently advancing my knowledge in cloud computing while building practical AI solutions that 
+            deliver real value.
           </p>
         </div>
 
@@ -25,8 +24,8 @@ const About = () => {
               </div>
               <h3 className="text-xl font-semibold">Professional Experience</h3>
               <p className="text-muted-foreground">
-                Extensive experience building and deploying AI systems at scale, from research prototypes to
-                production applications serving millions of users.
+                Building practical AI solutions through hands-on projects and internships, with a focus on 
+                data analysis, machine learning, and multi-agent systems.
               </p>
             </div>
           </Card>
@@ -36,10 +35,10 @@ const About = () => {
               <div className="p-4 rounded-full bg-gradient-primary">
                 <GraduationCap className="h-8 w-8 text-primary-foreground" />
               </div>
-              <h3 className="text-xl font-semibold">Education & Research</h3>
+              <h3 className="text-xl font-semibold">Continuous Learning</h3>
               <p className="text-muted-foreground">
-                Strong academic foundation in machine learning, deep learning, and AI, combined with ongoing
-                research in emerging technologies like agentic AI and RAG systems.
+                Completed certifications in AI engineering and agentic AI, actively exploring emerging 
+                technologies like RAG systems, LLMs, and cloud computing.
               </p>
             </div>
           </Card>

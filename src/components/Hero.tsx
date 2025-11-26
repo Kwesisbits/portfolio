@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowRight, Github, Linkedin, Mail, Download } from "lucide-react";
 import profilePhoto from "@/assets/profile-photo.jpg";
 
 const Hero = () => {
@@ -43,6 +43,16 @@ const Hero = () => {
             >
               Get In Touch
             </Button>
+            <Button 
+              variant="outline"
+              className="border-primary/50 hover:bg-primary/10"
+              asChild
+            >
+              <a href="/Resume_Nana_Amponsah.pdf" download>
+                <Download className="mr-2 h-4 w-4" />
+                Resume
+              </a>
+            </Button>
           </div>
           <div className="flex gap-4 pt-4">
             <a
@@ -62,7 +72,7 @@ const Hero = () => {
               <Linkedin className="h-5 w-5" />
             </a>
             <a
-              href="mailto:nanaamponsah931@gmail.com"
+              href="mailto:nanaamponsah391@gmail.com"
               className="p-3 rounded-full bg-card hover:bg-gradient-primary hover:text-primary-foreground transition-all hover:shadow-glow"
             >
               <Mail className="h-5 w-5" />

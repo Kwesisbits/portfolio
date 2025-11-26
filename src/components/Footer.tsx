@@ -7,9 +7,9 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div>
             <h3 className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-2">
-              AI Portfolio
+              Kwesi's Portfolio
             </h3>
-            <p className="text-muted-foreground">Building the future with artificial intelligence</p>
+            <p className="text-muted-foreground">Building intelligent scalable AI and Data solutions</p>
           </div>
           <div className="flex gap-4">
             <a
@@ -29,7 +29,7 @@ const Footer = () => {
               <Linkedin className="h-5 w-5" />
             </a>
             <a
-              href="mailto:nanaamponsah931@gmail.com"
+              href="mailto:nanaamponsah391@gmail.com"
               className="p-3 rounded-full bg-card hover:bg-gradient-primary hover:text-primary-foreground transition-all hover:shadow-glow"
             >
               <Mail className="h-5 w-5" />
@@ -37,7 +37,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-border text-center text-muted-foreground text-sm">
-          © {new Date().getFullYear()} AI Engineer Portfolio. All rights reserved.
+          © {new Date().getFullYear()} Kwesi's Portfolio. All rights reserved.
         </div>
       </div>
     </footer>
