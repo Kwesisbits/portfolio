@@ -25,7 +25,7 @@ const About = () => {
               <h3 className="text-xl font-semibold">Professional Experience</h3>
               <p className="text-muted-foreground">
                 Building practical AI solutions through hands-on projects and internships, with a focus on 
-                data analysis, machine learning, and multi-agent systems.
+                Multi-Agent Systems, Data Science, and ML Deployment.
               </p>
             </div>
           </Card>
